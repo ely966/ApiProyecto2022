@@ -46,6 +46,7 @@ public class AuthController {
    
 
     
+    
     /**
      * Registra el usuario sí el correo no se repite
      * @param user Objeto de tipo Usuario que sera recibido desde angular y comprende los datos del nuevo usuario
@@ -124,6 +125,9 @@ public class AuthController {
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(apiError);
 	}
     
-    
+	 @GetMapping(value = "/")
+	    public void vacio() {
+	       
+	    }
 
 }

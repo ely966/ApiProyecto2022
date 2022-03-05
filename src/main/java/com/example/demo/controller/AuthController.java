@@ -60,7 +60,7 @@ public class AuthController {
         /**comprobar que el correo que usa este nuevo usuario, no existe en la base de datos **/
         String token =null;
        Optional<User> usercorreo = userRepo.findByEmail(user.getEmail());
-       if(userRepo.findByEmail(user.getEmail()).isEmpty()) {/**Si el correo no lo tiene ninguna otro usuario**/
+       if(userRepo.findByEmail(user.getEmail()) !=null) {/**Si el correo no lo tiene ninguna otro usuario**/
     	   /**comprobar que el username que usa este  usuario, no existe en la base de datos **/
     	   token = jwtUtil.generateToken(user.getEmail());
            /**encriptamos la contraseña**/

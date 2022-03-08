@@ -34,7 +34,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-@CrossOrigin(origins = "https://ely966.github.io/proyectoVeterinariaF")
+@CrossOrigin(origins = "https://ely966.github.io")
 @RestController
 public class AuthController {
 

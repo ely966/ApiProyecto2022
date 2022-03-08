@@ -40,7 +40,7 @@ import com.example.demo.service.MascotaService;
 import com.example.demo.service.UserService;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://ely966.github.io/proyectoVeterinariaF")
 @RestController
 public class UserController {
 

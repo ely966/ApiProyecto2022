@@ -16,6 +16,8 @@ public class ProyectoApiVeterinaria2Application extends SpringBootServletInitial
 	
 	public static void main(String[] args) {
 		SpringApplication.run(ProyectoApiVeterinaria2Application.class, args);
+		
 	}
+	 
 
 }

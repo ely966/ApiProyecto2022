@@ -16,7 +16,7 @@ public class CorsConfiguration implements WebMvcConfigurer {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("**")
-				.allowedOrigins("http://proyectodawveterinaria.herokuapp.com")
+				.allowedOrigins("https://proyectodawveterinaria.herokuapp.com")
 				.allowedHeaders("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD","HEADER")
 				.allowedMethods("GET", "POST", "PUT", "DELETE");
 				//maxAge(3600)

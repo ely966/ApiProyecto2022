@@ -65,7 +65,7 @@ import com.example.demo.service.MascotaService;
 import com.example.demo.service.UserService;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
-@CrossOrigin(origins = "http://proyectodawveterinaria.herokuapp.com")
+@CrossOrigin(origins = "https://proyectodawveterinaria.herokuapp.com")
 @RestController
 public class UserController {
 

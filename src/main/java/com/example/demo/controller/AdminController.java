@@ -34,7 +34,7 @@ import com.example.demo.service.AdminService;
 import com.example.demo.service.UserService;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
-@CrossOrigin(origins = "https://localhost:4200")
+@CrossOrigin(origins = "https://proyectodawveterinaria.herokuapp.com")
 @RestController
 
 public class AdminController {

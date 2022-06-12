@@ -24,8 +24,19 @@ public class MyUserDetailsService implements UserDetailsService {
         Optional<User> userRes = userRepo.findByEmail(email);
         if(userRes == null)  /**Esta vacío**///userRes.isEmpty()
             throw new UsernameNotFoundException("Could not findUser with email = " + email);
-        
+        /**Si existe**/
         User user = userRes.get();
+        if(user.getRole().compareTo("ADMIN") ==0) {//Si el role que tiene es admin
+        	 return new org.springframework.security.core.userdetails.User(
+                     email,
+                     user.getPassword(),
+                     Collections.singletonList(new SimpleGrantedAuthority("ROLE_ADMIN")));
+        }else if (user.getRole().compareTo("VETERINARIO") ==0) {//Si el role que tiene es veterinario
+       	 return new org.springframework.security.core.userdetails.User(
+                 email,
+                 user.getPassword(),
+                 Collections.singletonList(new SimpleGrantedAuthority("ROLE_VETERINARIO")));
+    }
         return new org.springframework.security.core.userdetails.User(
                 email,
                 user.getPassword(),

@@ -1,6 +1,7 @@
 package com.example.demo.model;
 
 import java.sql.Time;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Date;
 
@@ -15,6 +16,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.Future;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -42,13 +44,25 @@ public class Cita {
 	private User cliente;
 	@ManyToOne(fetch = FetchType.EAGER)
 	private Mascota pet;
+	private int numeroContacto; //numero de conectato del cliente para que el veterinario pueda llamar
+	//Añadir veterinario
+	private Long idVeterinario;
+	@Future
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@JsonFormat(pattern = "yyyy-MM-dd ", timezone = "GMT+8")
 	private Date fecha;
 	@Temporal(TemporalType.TIME)
+	
+	
 	private Date hora;
+	
 	private String motivo;
+
+
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date fechaCompleta;
 	
 	
 	public Cita(Mascota pet, Date fecha, Time hora, String motivo) {

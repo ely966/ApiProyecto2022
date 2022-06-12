@@ -11,7 +11,7 @@ public class MascotaExistedException extends RuntimeException {
 	 */
 	private static final long serialVersionUID = -1875509380030645657L;
 
-	public MascotaExistedException(Long id) {
-		super("No existe esa mascota");
+	public MascotaExistedException() {
+		super(" existe esa mascota");
 	}
 }

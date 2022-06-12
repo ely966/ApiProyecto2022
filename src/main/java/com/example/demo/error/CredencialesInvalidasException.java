@@ -12,7 +12,7 @@ public class CredencialesInvalidasException  extends RuntimeException{
 	private static final long serialVersionUID = -6352181196953653112L;
 
 	public CredencialesInvalidasException() {
-		super("Mal los datos");
+		super("Credenciales invalidas");
 	}
 
  

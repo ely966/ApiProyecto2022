@@ -7,10 +7,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class FechaanteriorException extends RuntimeException{
 
 	
-
-	
-	
-	
 	/**
 	 * 
 	 */

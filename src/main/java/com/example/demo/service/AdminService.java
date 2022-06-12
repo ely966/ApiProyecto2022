@@ -18,7 +18,7 @@ import com.example.demo.repository.UserRepo;
 @Service("AdminService")
 
 public class AdminService {
-	
+
 	@Autowired
 	private UserRepo userRepo;
 	

@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 
 public class ApiError {
 
-	
+
 	private HttpStatus estado;
 	@JsonFormat(shape = Shape.STRING, pattern = "dd/MM/yyyy hh:mm:ss")
 	private LocalDateTime fecha;

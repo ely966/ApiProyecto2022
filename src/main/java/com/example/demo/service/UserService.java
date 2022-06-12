@@ -11,7 +11,6 @@ import com.example.demo.model.CredencialesEditarUser;
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepo;
 
-
 @Primary
 @Service("UserService")
 public class UserService {

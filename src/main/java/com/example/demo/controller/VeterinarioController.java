@@ -36,6 +36,7 @@ import com.example.demo.service.VeterinarioService;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
 @CrossOrigin(origins = "https://ely966.github.io")
+
 @RestController
 public class VeterinarioController {
 	 @Autowired private JWTUtil jwtUtil;

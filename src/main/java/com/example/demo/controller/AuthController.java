@@ -99,7 +99,7 @@ public class AuthController {
      * @return regresa el token si existe el usuario y puede logearse. En caso contrario, saltaria un error, pero que no detiene la app
      */
 
-    @PostMapping("auth/login")
+    @PostMapping("/auth/login")
     public Map<String, Object> loginHandler(@RequestBody LoginCredentials body){
     	   /**activar init**/
     	TimeZone.setDefault(TimeZone.getTimeZone("UTC"));

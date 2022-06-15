@@ -19,8 +19,8 @@ public class CorsConfiguration implements WebMvcConfigurer {
 				.allowedOrigins("**")
 				.allowedHeaders("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD","HEADER")
 				.allowedMethods("GET", "POST", "PUT", "DELETE");
-				//maxAge(3600)
-				//https://ely966.github.io/proyectoVeterinariaF
+				//maxAge(3600)//https://ely966.github.io
+				
 			}
 		};
 	}

@@ -31,7 +31,7 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	//private String userName;
+	
 	private String nombre;
 	
 	private String email;//Se identifica e user por el correo. El correo que es el usuario apra ingresar a la aplicación.

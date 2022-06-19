@@ -35,7 +35,7 @@ import com.example.demo.service.UserService;
 import com.example.demo.service.VeterinarioService;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
-@CrossOrigin(origins = "**")
+@CrossOrigin(origins = "https://ely966.github.io")
 
 
 @RestController

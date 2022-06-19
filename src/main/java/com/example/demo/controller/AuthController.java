@@ -47,8 +47,8 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-@CrossOrigin(origins = "**")
-//@CrossOrigin(origins = "https://ely966.github.io")
+@CrossOrigin(origins = "https://ely966.github.io")
+//@CrossOrigin(origins = "http://localhost:4400")
 @RestController
 
 public class AuthController {

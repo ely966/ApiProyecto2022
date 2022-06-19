@@ -16,7 +16,7 @@ public class CorsConfiguration implements WebMvcConfigurer {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("**")
-				.allowedOrigins("https://ely966.github.io")
+				.allowedOrigins("https://ely966.github.io/")
 				.allowedHeaders("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD","HEADER")
 				.allowedMethods("GET", "POST", "PUT", "DELETE");
 				//maxAge(3600)//https://ely966.github.io
